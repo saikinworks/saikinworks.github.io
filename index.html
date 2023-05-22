@@ -74,7 +74,7 @@
         color:rgba(73, 109, 130, 1);
         margin:5px 0px;
         word-spacing:10px;
-        background: linear-gradient(transparent 60%, #feffa7 60%);
+        background: linear-gradient(transparent 60%, #f7f8a8 60%);
         border-radius: 5px;
      
     }
@@ -216,6 +216,13 @@
 
         }
 
+        @media(max-width:500px){ 
+            .sns-icon:hover{/*滑鼠移入時的顯示*/
+        
+                 transform:rotate(0deg) scale(1);}
+
+        }
+
 
     /*REEL區*/
     .reel{
@@ -233,7 +240,7 @@
         position: relative;
         display: inline-block;
 
-        background: linear-gradient(transparent 60%, #feffa7 60%);
+        background: linear-gradient(transparent 60%, #f7f8a8 60%);
         border-radius: 5px;
       
                 
@@ -298,18 +305,18 @@
     }
     @media(max-width:500px){
         .reel-vid{
-            margin:0px 0px 0px 5px;
+            margin:0px 0px 0px 0px;
         }
     }
 
-    @media(max-width:376px){
+    @media(width:375px){
         .reel-vid{
-            margin:0px 0px 0px 10px;
+            margin:0px 0px 0px 0px;
         }
     }
-    @media(max-width:415px){
+    @media(width:414px){
         .reel-vid{
-            margin:0px 0px 0px 7px;
+            margin:0px 0px 0px 0px;
         }
     }
 
@@ -343,7 +350,7 @@
         position: relative;
         display: inline-block;
 
-        background: linear-gradient(transparent 60%, #feffa7 60%);
+        background: linear-gradient(transparent 60%, #f7f8a8 60%);
         border-radius: 5px;
 
 
@@ -550,7 +557,7 @@
             }
         
             .vid-title2{
-                font-size: 15px;
+                font-size: 13px;
                 top: 62%;
             }
             .vid-title3{
@@ -562,12 +569,13 @@
     @media(max-width:575px){   /*手機*/
         .vids{
             max-width: 300px; 
+            box-shadow: 1px 1px 5px rgb(207, 207, 207);
 
          }
         .container{
             margin:20px 40px 50px 40px;
         }
-        .container:hover .overlay{   /*覆蓋色&文字hover*/
+        .container:hover .overlay{   /*取消覆蓋色&文字hover*/
         opacity: 0;
         }
         .container:hover  {             /*滑鼠移入時的顯示*/
@@ -596,6 +604,7 @@
     .hr1{
         border: 0.5px dashed rgb(189, 189, 189);
         border-radius: 1px;
+        cursor: text
     }
 
 
@@ -608,6 +617,7 @@
     .bottom-text{
         margin:50px;
         margin-top:100px;
+        cursor: text
 
     }
 
